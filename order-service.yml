@@ -17,3 +17,11 @@ spring:
     show-sql: true
   application:
     name: order-service
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    instance-id: ${spring.application.name}:${random.uuid}
+server:
+  port: 0    
