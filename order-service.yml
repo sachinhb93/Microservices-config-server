@@ -1,0 +1,19 @@
+db:
+  host: localhost
+  port: 3306
+  name: order-service
+  username: root
+  password: root
+spring:
+  datasource:
+    url: jdbc:mysql://${db.host}:${db.port}/${db.name}
+    username:  ${db.username}
+    password:  ${db.password}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: mysql
+    show-sql: true
+  application:
+    name: order-service
