@@ -1,3 +1,5 @@
+test:
+  name: sachin
 spring:
   data:
     mongodb:
