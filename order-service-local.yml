@@ -1,7 +1,7 @@
 db:
   host: localhost
   port: 3306
-  name: order-service
+  name: orderservice
   username: root
   password: root
 spring:
